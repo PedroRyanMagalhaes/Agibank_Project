@@ -1,0 +1,16 @@
+# Banco gerado pela carga (reproduzível via scripts/carga.py)
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Power BI / Office temporários
+~$*
+*.pbix.bak
+
+# Pasta original do enunciado (cópia já está em data/raw e docs/)
+Teste Tecnico - Analista de Portfólio (3)/
