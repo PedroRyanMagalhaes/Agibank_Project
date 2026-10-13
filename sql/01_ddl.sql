@@ -8,7 +8,6 @@ CREATE TABLE dim_produto (
     nm_produto TEXT NOT NULL,
     nm_subproduto TEXT NOT NULL
 );
-
 CREATE TABLE fato_carteira (
     mesref TEXT NOT NULL,
     safra TEXT NOT NULL,
@@ -25,6 +24,5 @@ CREATE TABLE fato_carteira (
     FOREIGN KEY (cd_produto) REFERENCES dim_produto(cd_produto)
     
 );
-
 CREATE INDEX idx_fato_carteira_mesref ON fato_carteira(mesref);
 CREATE INDEX idx_fato_carteira_safra_mob ON fato_carteira(safra, mob);
